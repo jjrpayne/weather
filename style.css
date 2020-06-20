@@ -20,6 +20,10 @@ body{
 	font-size: 42px;
 	font-family:"Helvetica", 'sans-serif';
 }
+#weatherContainer h1 span {
+	font-size: 24px;
+}
+
 #searchContainer{
 	padding: 15px;
 	position: absolute;
