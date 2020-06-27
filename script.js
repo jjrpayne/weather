@@ -41,6 +41,7 @@ function init(resultFromServer){
 	var windSpeedElement = document.getElementById('windSpeed');
 	var cityHeader = document.getElementById('cityHeader');
 	var weatherIcon = document.getElementById('documentIconImg');
+	var appInfo = document.getElementById('appInfo');
 
 	weatherIcon.src = 'http://openweathermap.org/img/wn/' + resultFromServer.weather[0].icon + '.png';
 
@@ -69,6 +70,8 @@ function setPositionForWeatherInfo(){
 	weatherContainer.style.left = `calc(50% - ${weatherContainerWidth/2}px)`;
 	weatherContainer.style.top = `calc(50% - ${weatherContainerHeight/1.3}px)`;
 	weatherContainer.style.visibility = 'visible';
+
+	appInfo.style.visibility = 'hidden';
 }
 
 document.getElementById('searchBtn').addEventListener('click', search);
